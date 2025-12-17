@@ -1,0 +1,27 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Notes App</title>
+</head>
+<body>
+    <H1>Welcome to the Notes App</H1>
+    Eres {{role }}
+
+    {% if role == "admin" %}
+    <button>eliminar</button>
+    {% else %}
+    <button>solicitar eliminacion</button>
+    {% endif %}
+
+    <ul>
+    {% for note in notes %}
+        <li>
+        {{ note }}
+        </li>
+    {% endfor %}
+    </ul>
+</body>
+</html>
+        
+    
